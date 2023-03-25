@@ -1,14 +1,11 @@
 
-// import { useEffect, useState } from 'react';
 import './App.css';
-import Country from './Component/Country/Country';
-import Header from './Component/Header/Header';
+import Countries from './Component/Countries/Countries';
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-    <Country></Country>
+      <Countries></Countries>
     </div>
   );
 }
