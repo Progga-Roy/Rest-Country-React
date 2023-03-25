@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -35,4 +36,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.country{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+ 
+}
+.single-country{
+  border: 2px solid goldenrod
 }

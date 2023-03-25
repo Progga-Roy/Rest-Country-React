@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="App">
       <h1>Rest countries welcome back with React</h1>
+      
       <LoadCountries></LoadCountries>
     </div>
   );
@@ -21,11 +22,23 @@ fetch('https://restcountries.com/v3.1/all')
 },[])
 
 return (
-  <div>
+  <div className='country'>
     <p>Available Countries : {countries.length}</p>
+    {
+      countries.map(country=> <Country name={country.name.common} flags={country.flags.png} region={country.region}  population={country.population}></Country>)
+    }
   </div>
 )
 }
 
-
+function Country(props){
+return (
+  <div className='single-country'>
+    <h3>Name: {props.name}</h3>
+    <img src={props.flags} alt="" />
+    <h4>Continent : {props.region}</h4>
+    <p>Population :{props.population}</p>
+  </div>
+)
+}
 export default App;
