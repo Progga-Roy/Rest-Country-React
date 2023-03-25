@@ -15,7 +15,7 @@ const Countries = () => {
             <p>Available Countries : {countries.length}</p>
            <div className="countries">
            {
-            countries.map(country=><Country country={country} ></Country>)
+            countries.map(country=><Country country={country} key={country.cca3} ></Country>)
             }
            </div>
         </div>

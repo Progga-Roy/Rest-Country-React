@@ -1,5 +1,7 @@
 .country{
     margin: 20px;
-    background-color: bisque;
-
+    background-color: rgb(242, 224, 203);
+}
+.country img{
+    width: 200px;
 }
