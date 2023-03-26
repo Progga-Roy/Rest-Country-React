@@ -1,0 +1,12 @@
+.battery{
+    width: 80px;
+    height: 100px;
+    background-color:rgb(106, 231, 106);
+    margin: 0 auto;
+    /* padding: 15px; */
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
